@@ -1,25 +1,36 @@
 html,body{
+	margin:0;
 	padding: 0;
 	background-color: white;
 }
 @font-face {
-  font-family: 'headers';
-  src: url('proxima.ttf') format('ttf');
+  font-family: "headers";
+  src: url('./assets/proxima.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'ptags';
-  src: url('ProximaSoftLight.ttf') format('ttf');
+  font-family: "ptags";
+  src: url('./assets/light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'icons';
-  src: url('Poppins-Light.ttf') format('ttf');
+  font-family: "icons";
+  src: url('./assets/poppins.ttf') format('truetype');
 }
+
 h1,p{
 	line-height: 45px;
+	font-family: 'ptags', san-serif;  
+}
+h1{
+	font-weight: bold;
 }
 .no-padding{
 	padding:0px;
 }
+
+.row{
+	padding-bottom: 100px;
+}
+
 .navigation{
 	display:flex;
 	flex-direction: row;
@@ -28,11 +39,19 @@ h1,p{
 	z-index: 5;
 	overflow: hidden;
 }
+
 .navigation div{
 	flex-grow: 1;
 	text-align: center;
 	cursor: pointer;
+	font-family: 'headers'
 }
+
+.navigation div:hover{
+	text-decoration: underline;
+	color: turquoise;
+}
+
 .login{
 	background:url('./assets/loginButton.png');
 	background-size: cover;
@@ -41,126 +60,142 @@ h1,p{
     max-width: 90px;
     height: 30px;
 }
+
 .more:before{
 	content: url('./assets/Arrow.png');
 	margin-right: 10px;
 	padding: 10px;
 }
+
 .signup{
 	background-color: white;
 	border-radius: 25px;
-	border: 1px solid blue;
-	color: blue;
+	border: 1px solid turquoise;
+	color: turquoise;
 	text-align: center;
 	padding: 3px 35px;
 	cursor: pointer;
+	font-family: 'icons';
+	font-weight:bold;
+	box-shadow: 0 2px 7px 0 turquoise, 0 3px 3px 0 turquoise;
 }
+
 .signup:hover{
-	background-color: blue;
+	background-color: turquoise;
 	color: white;
+	transform: translateY(-3px);
+	font-weight: bold;
 }
+
 .icons,.blank-icons{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	position: relative;
 	justify-content: center;
+	cursor: pointer;
 }
-.row{
-	padding-bottom: 100px;
+
+.icons img:hover,.blank-icons img:hover{
+	height: 72px;
+	width: 72px;
+	transform: translateY(-10px);
 }
+
 .icons img{
     margin: 0 auto;
 }
+
 .icons p{
-	font-size: 10px;
+	font-size: 12px;
+	font-family: 'icons'
 }
+
 .icons div{
 	padding: 0 40px 0 40px;
 	text-align: center;
 }
+
 .selected-icon{
 	position: relative;
 }
+
 .back{
 	content: url('./assets/Rollover.png');
 }
+
 .top{
 	position: absolute;
 	z-index: 2;
 	top:20px;
 	left:105px;
 }
+
 .middle-bit{
 	display: flex;
 	align-items: center;
 }
+
 .blank-icons div{
 	padding: 40px;
 }
+
 .image-bubble{
 	position: relative;
-	overflow: hidden;
 }
+
 .blob{
 	content: url('./assets/Bg.png');
 	float: right;
-	margin-right: -30px;
-	overflow: hidden !important;
-	z-index: 100;
 }
+
 .ut{
 	position: absolute;
 	top: 5px;
 	right: 5px;
-	z-index: 1;
-	overflow: hidden !important;
 }
+
 .house{
 	position: absolute;
 	top: 270px;
 	right:5px;
-	z-index: 1;
-	overflow: hidden !important;
 }
 
 .nike{
 	position: absolute;
 	top: 540px;
 	right: 5px;
-	z-index: 1;
-	overflow: hidden !important;
 }
+
 .health{
 	position: absolute;
 	top: 5px;
 	right: 340px;
 	overflow: hidden;
-	z-index: 1;
-	overflow: hidden !important;
 }
+
 .jims{
 	position: absolute;
 	top: 270px;
 	right: 340px;
 }
+
 .smile{
 	position: absolute;
 	top: 540px;
 	right: 340px;
 }
+
 .nike2{
 	position: absolute;
 	top: 810px;
 	right: 5px;
-	z-index: 1;
-	overflow: hidden !important;
-}.house2{
+}
+
+.house2{
 	position: absolute;
 	top: 810px;
 	right: 340px;
-	z-index: 1;
-	overflow: hidden !important;
 }
 
 
