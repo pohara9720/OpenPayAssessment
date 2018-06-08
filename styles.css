@@ -209,11 +209,34 @@ h1{
     border-bottom-left-radius: 100%;
 }
 
-
+.mobile-blob{
+	display: none;
+}
 
 @media screen and (max-width: 600px) {
   	.navigation{
   		display: none;
+  	}
+  	.center-mobile{
+  		text-align: center;
+  	}
+  	.icons,.blank-icons{
+  		flex-direction: column;
+  		align-items: center;
+  	}
+  	.image-bubble{
+  		display: none;
+  	}
+  	.mobile-blob{
+  		display: flex;
+  		margin-top: 40px;
+  	}
+  	.mobile-row{
+  		flex-direction: row;
+  		justify-content: center;
+  	}
+  	.mobile-row img{
+  		width: 100%;
   	}
 }
 
