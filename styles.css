@@ -1,0 +1,98 @@
+html,body{
+	margin: 0 80px 0 80px;
+	padding: 0;
+	background-color: white;
+}
+@font-face {
+  font-family: 'headers';
+  src: url('proxima.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'ptags';
+  src: url('ProximaSoftLight.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'icons';
+  src: url('Poppins-Light.ttf') format('ttf');
+}
+.no-padding{
+	padding:0px;
+}
+.navigation{
+	display:flex;
+	flex-direction: row;
+	padding: 30px;
+	justify-content: center;
+	/*margin: 0 80px 0 80px;*/
+}
+.navigation div{
+	flex-grow: 1;
+	text-align: center;
+	cursor: pointer;
+	/*font-family: headers;*/
+}
+.login{
+	background:url('./assets/loginButton.png');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 90px;
+    height: 30px;
+}
+.more:before{
+	content: url('./assets/Arrow.png');
+	margin-right: 10px;
+	padding: 10px;
+}
+.signup{
+	background-color: white;
+	border-radius: 25px;
+	border: 1px solid blue;
+	color: blue;
+	text-align: center;
+	padding: 3px 35px;
+	cursor: pointer;
+}
+.signup:hover{
+	background-color: blue;
+	color: white;
+}
+.row{
+	padding: 30px;
+}
+.icons,.blank-icons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+}
+.icons p{
+	/*font-family: 'headers'*/
+}
+.icons img{
+	display: block;
+    margin: 0 auto;
+}
+.icons div{
+	flex-grow: 1;
+	text-align: center;
+}
+.back{
+	position: relative;
+	z-index: 1;
+}
+.top{
+	position: absolute;
+	z-index: 2;
+	top:20px;
+	left: 70px;
+}
+.blank-icons{
+	justify-content: center;
+}
+.blank-icons div{
+	padding: 40px;
+}
+
+
+
