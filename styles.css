@@ -212,10 +212,16 @@ h1{
 .mobile-blob{
 	display: none;
 }
+.navbar{
+	display: none;
+}
 
 @media screen and (max-width: 600px) {
   	.navigation{
   		display: none;
+  	}
+  	.navbar{
+  		display: flex;
   	}
   	.center-mobile{
   		text-align: center;
