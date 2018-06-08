@@ -170,8 +170,10 @@ h1{
 .health{
 	position: absolute;
 	top: 5px;
-	right: 340px;
-	overflow: hidden;
+	right: 300px;
+	width: 340px;
+	clip: rect(-2px, 286px, 252px, 11px);
+	border-top-left-radius: 100%; 
 }
 
 .jims{
@@ -188,16 +190,32 @@ h1{
 
 .nike2{
 	position: absolute;
-	top: 810px;
-	right: 5px;
+    top: 810px;
+    right: 40px;
+    width: 290px;
+    clip-path: inset(0 0 74px 0);
+    border-bottom-right-radius: 100%;
+    clip: rect(7px, 313px, 270px, 13px);
 }
 
 .house2{
 	position: absolute;
-	top: 810px;
-	right: 340px;
+    top: 810px;
+    right: 342px;
+    width: 272px;
+    height: 199px;
+    clip-path: inset(0 0 34px 0);
+    clip: rect(-2px, 304px, 259px, 10px);
+    border-bottom-left-radius: 100%;
 }
 
+
+
+@media screen and (max-width: 600px) {
+  	.navigation{
+  		display: none;
+  	}
+}
 
 
 
