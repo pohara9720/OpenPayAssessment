@@ -217,11 +217,22 @@ h1{
 }
 
 @media screen and (max-width: 600px) {
+	.container-fluid{
+		padding:20px;
+	}
+	.mobile-menu-btn{
+		color: turquoise;
+		border: 1px solid turquoise;
+		background-color: white;
+		padding: 3px 15px;
+		border-radius: 25px;
+	}
   	.navigation{
   		display: none;
   	}
   	.navbar{
   		display: flex;
+  		margin-bottom: 20px;
   	}
   	.center-mobile{
   		text-align: center;
