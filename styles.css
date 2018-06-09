@@ -25,6 +25,7 @@ h1{
 }
 .no-padding{
 	padding:0px;
+	overflow: hidden;
 }
 
 .row{
@@ -140,73 +141,30 @@ h1{
 	padding: 40px;
 }
 
+.image-row{
+	display: flex;
+	flex-direction: row;
+	transform: rotate(20deg);
+}
+
 .image-bubble{
-	position: relative;
+	display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 100%;
+    background-image: url('./assets/Bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-20deg);
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-.blob{
-	content: url('./assets/Bg.png');
-	float: right;
-}
-
-.ut{
-	position: absolute;
-	top: 5px;
-	right: 5px;
-}
-
-.house{
-	position: absolute;
-	top: 270px;
-	right:5px;
-}
-
-.nike{
-	position: absolute;
-	top: 540px;
-	right: 5px;
-}
-
-.health{
-	position: absolute;
-	top: 5px;
-	right: 300px;
-	width: 340px;
-	clip: rect(-2px, 286px, 252px, 11px);
-	border-top-left-radius: 100%; 
-}
-
-.jims{
-	position: absolute;
-	top: 270px;
-	right: 340px;
-}
-
-.smile{
-	position: absolute;
-	top: 540px;
-	right: 340px;
-}
-
-.nike2{
-	position: absolute;
-    top: 810px;
-    right: 40px;
-    width: 290px;
-    clip-path: inset(0 0 74px 0);
-    border-bottom-right-radius: 100%;
-    clip: rect(7px, 313px, 270px, 13px);
-}
-
-.house2{
-	position: absolute;
-    top: 810px;
-    right: 342px;
-    width: 272px;
-    height: 199px;
-    clip-path: inset(0 0 34px 0);
-    clip: rect(-2px, 304px, 259px, 10px);
-    border-bottom-left-radius: 100%;
+.image-bubble img {
+    box-sizing: border-box;
 }
 
 .mobile-blob{
