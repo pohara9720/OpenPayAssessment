@@ -4,16 +4,16 @@ html,body{
 	background-color: white;
 }
 @font-face {
-  font-family: "headers";
-  src: url('./assets/proxima.ttf') format('truetype');
+  	font-family: "headers";
+  	src: url('./assets/proxima.ttf') format('truetype');
 }
 @font-face {
-  font-family: "ptags";
-  src: url('./assets/light.ttf') format('truetype');
+  	font-family: "ptags";
+  	src: url('./assets/light.ttf') format('truetype');
 }
 @font-face {
-  font-family: "icons";
-  src: url('./assets/poppins.ttf') format('truetype');
+	font-family: "icons";
+	src: url('./assets/poppins.ttf') format('truetype');
 }
 
 h1,p{
@@ -23,6 +23,11 @@ h1,p{
 h1{
 	font-weight: bold;
 }
+
+p{
+	font-size: 18px;
+}
+
 .no-padding{
 	padding:0px;
 	overflow: hidden;
@@ -45,6 +50,7 @@ h1{
 	flex-grow: 1;
 	text-align: center;
 	cursor: pointer;
+	font-size: 18px;
 	font-family: 'headers'
 }
 
