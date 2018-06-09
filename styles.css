@@ -144,7 +144,7 @@ h1{
 .image-bubble{
 	display: flex;
     flex-wrap: wrap;
-    width: 1220px;
+    width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
