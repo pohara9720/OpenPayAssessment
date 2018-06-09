@@ -141,26 +141,23 @@ h1{
 	padding: 40px;
 }
 
-.image-row{
-	display: flex;
-	flex-direction: row;
-	transform: rotate(20deg);
-}
-
 .image-bubble{
 	display: flex;
     flex-wrap: wrap;
     width: 1220px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 100%;
+    border-radius: 50%;
     background-image: url('./assets/Bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(-20deg);
-    flex-direction: column;
     margin-top: 20px;
+}
+
+.rotate{
+	transform: rotate(20deg);
 }
 
 .image-bubble img {
